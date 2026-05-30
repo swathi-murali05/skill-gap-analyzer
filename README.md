@@ -16,7 +16,7 @@ An intelligent web application that analyzes user skills against target job role
 - jsPDF Library
 
 ## 🌐 Live Demo
-https://yourusername.github.io/skill-gap-analyzer/
+https://swathi-murali05.github.io/skill-gap-analyzer/
 
 ## 📌 Developed By
 Swathi M
