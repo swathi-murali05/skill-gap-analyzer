@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #2b1055;
+    padding: 30px;
+    width: 450px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(to right, #00f5ff, #ff00c8);
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 30px;
+    margin-bottom: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-item input {
+    width: 18px;
+    height: 18px;
+    accent-color: #00f5ff;
+}
+
+#result {
+    margin-top: 20px;
+    background: #1a0633;
+    padding: 15px;
+    border-radius: 8px;
+}
+/* ===== Result Card Design ===== */
+.report-card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #14042b, #2b1055);
+    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.report-card h2 {
+    text-align: center;
+    color: #00f5ff;
+}
+
+.highlight {
+    color: #00f5ff;
+    font-weight: bold;
+}
+
+.missing {
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+.success {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.score-box {
+    margin-top: 10px;
+    padding: 10px;
+    background: #1a0633;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(10px);}
+    to {opacity:1; transform: translateY(0);}
+}

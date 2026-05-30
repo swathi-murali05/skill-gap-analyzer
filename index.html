@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 AI Skill Gap Analyzer</h1>
+
+    <!-- Name Input -->
+    <label>Your Name:</label>
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <!-- Role Selection -->
+    <label>Select Target Role:</label>
+    <select id="role">
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="Full Stack Developer">Full Stack Developer</option>
+        <option value="Data Analyst">Data Analyst</option>
+    </select>
+
+    <!-- Skills Section -->
+    <h3>Select Your Skills:</h3>
+
+    <div class="skills-grid">
+        <label class="skill-item"><input type="checkbox" value="HTML"> HTML</label>
+        <label class="skill-item"><input type="checkbox" value="CSS"> CSS</label>
+        <label class="skill-item"><input type="checkbox" value="JavaScript"> JavaScript</label>
+        <label class="skill-item"><input type="checkbox" value="React"> React</label>
+        <label class="skill-item"><input type="checkbox" value="Java"> Java</label>
+        <label class="skill-item"><input type="checkbox" value="Spring Boot"> Spring Boot</label>
+        <label class="skill-item"><input type="checkbox" value="SQL"> SQL</label>
+        <label class="skill-item"><input type="checkbox" value="Python"> Python</label>
+        <label class="skill-item"><input type="checkbox" value="Power BI"> Power BI</label>
+        <label class="skill-item"><input type="checkbox" value="OOP"> OOP</label>
+        <label class="skill-item"><input type="checkbox" value="Excel"> Excel</label>
+    </div>
+
+    <button onclick="analyzeSkills()">Analyze</button>
+    <button onclick="downloadPDF()">Download AI Report</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
